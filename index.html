@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <title>Héroes</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Héroes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#marvel">Marvel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dc">DC</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Ir</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <img class="img-fluid vw-100 max-vh-100" src="https://i.ibb.co/J2cYzKr/marvel-dc1.jpg" alt="">
+    </div>
+
+    <div class="container-fluid" id="marvel">
+        <a class="text-decoration-none" href="#">
+            <h1 class="display-1 text-center text-danger bg-dark p-3"><strong>Marvel</strong></h1>
+        </a>
+        <div class="row g-4" id="mc-item">
+
+        </div>
+    </div>
+
+    <img class="img-fluid rounded img-thumbnail d-block mx-auto mb-3 d-lg-none"
+        src="https://i.ibb.co/qJpdCS3/marvel-dc2.jpg" alt="">
+
+    <div class="container-fluid" id="dc">
+        <a class="text-decoration-none" href="#">
+            <h1 class="display-1 text-center text-info bg-dark p-3" id="dc"><strong>DC</strong></h1>
+        </a>
+        <div class="row g-4" id="dc-item">
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="hero" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-light bg-dark">
+                    <h2 class="modal-title"></h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-7">
+                            <h3>Alter ego:</h3>
+                            <p class="fs-4 alter-ego"></p>
+                            <h3>Publisher:</h3>
+                            <p class="fs-4 publisher"></p>
+                            <h3>First appearance:</h3>
+                            <p class="fs-4 first-appearance"></p>
+                            <h3>Characters</h3>
+                            <p class="fs-4 characters"></p>
+                        </div>
+                        <div class="col-5 img-hero">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-danger"><i class="bi bi-backspace"></i></button>
+                    <button type="button" class="btn btn-info text-white"><i
+                            class="bi bi-backspace-reverse"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid d-flex justify-content-center align-items-center text-white"
+        style="background-image: url('https://i.ibb.co/VVcjsq8/marvel-dc3.jpg'); height: 128px">
+        <p class="fs-4">Todos los derechos reservados &copy;</p>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script src="./data.js"></script>
+</body>
+
+</html>
